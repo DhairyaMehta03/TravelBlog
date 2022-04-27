@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Reviews</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="../stylesheets/read.css" />
+      </head>
+<body>
+    <div class="bg">
+        <nav>
+            <a href="/">Home</a>
+            <a href="/destinations">Destinations</a>
+            <a href="/ratings">Ratings</a>
+        </nav>
+        <div id="top">
+            <div id="overlay">
+            </div>
+            <div id="container">
+                <h2>Check the Reviews!</h2>
+                <br>
+                <% data.forEach(function(travel){  %>
+                    <div class="card">
+                        <h3>
+                            <%= travel.destination %>
+                        </h3>
+                        <br/>
+                        <p>
+                            <%= travel.description %>
+                        </p>
+                        <br/>
+                        <a href="/update/<%= travel._id %>"><button class="update">Update</button></a>
+                        <a href="/delete/<%= travel._id %>"><button class="delete">Delete</button></a>
+                    </div>
+               <% }) %>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

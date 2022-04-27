@@ -1,0 +1,102 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.bg{
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+}
+
+#top{
+    width:100%;
+    height:40vh;
+    background-image:url('https://cdn.thecoolist.com/wp-content/uploads/2021/05/Most-beautiful-places-New-Zealand.jpg');
+    background-size:cover;
+    background-position: center;
+}
+
+#container{
+    width:100%;
+    min-height: 60vh;
+    padding:4% 6%;
+}
+
+#overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.569);
+    box-shadow: 0 5px 10px rgb(100,100,100);
+}
+
+.card{
+    min-height: 150px;
+    width: 100%;
+    background-color: lightcoral;
+    padding: 30px 50px;
+    border-radius: 4px;
+    margin-top:2rem;
+}
+
+#container h2{
+    margin-left:3%;
+    margin-right:1%;
+}
+
+.card button{
+    padding:10px 15px;
+    border-radius: 3px;
+    border:none;
+    margin-right: 1rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color:blue;
+}
+
+#update{
+    background-color:darkslateblue;
+}
+
+#delete{
+    background-color: darkturquoise;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+.bg nav{
+    position: absolute;
+    top:0;
+    right:3%;
+    z-index:0;
+    height:15%;
+    display:flex;
+    font-weight:600;
+    align-items: center;
+}
+
+nav a{
+    margin:1.5rem;
+}
+
+nav a:hover{
+    color:crimson;
+}
+
+body::-webkit-scrollbar{
+    width:10px;
+}
+
+body::-webkit-scrollbar-thumb{
+    color:#999;
+}

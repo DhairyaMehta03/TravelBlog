@@ -1,0 +1,72 @@
+.bg{
+    background-image: url('https://blog.thomascook.in/wp-content/uploads/2017/01/fairypools.jpg');
+}
+
+#overlay{
+    width:100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.213);    
+}
+
+#modal{
+    position:absolute;
+    top:45%;
+    left:45%;
+    transform: translate(-50%,-50%);
+    z-index:5;
+    width:50%;
+    border-radius:4px;
+    box-shadow:0 0 0 1000px rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.685);
+    padding:80px 10px;
+    backdrop-filter: blur(4px);
+    color:white;
+}
+
+#modal .cross{
+    position:absolute;
+    right:15px;
+    top:15px;
+    cursor:pointer;
+}
+
+#modal input[type="text"]{
+    padding:11px 20px;
+    width:100%;
+    display:block;
+    background-color: transparent;
+    border: 1.4px solid #f1f1f1;
+    border-radius: 3px;
+    color: white;
+}
+
+#modal textarea{
+    display:block;
+    width:100%;
+    margin-top:10px;
+    border:1.4px solid #f1f1f1;
+    border-radius:4px;
+    background-color:transparent;
+    height:200px;
+    resize:none;
+    color:white;
+    padding:10px 20px;
+}
+
+#modal button{
+    display:block;
+    width:100%;
+    margin-top:20px;
+    padding:12px 23px;
+    background-color:coral;
+    color:white;
+    border:none;
+    border-radius:3px;
+    cursor:pointer;
+    letter-spacing:1px;
+    font-weight:700;
+}
+
+::placeholder{
+    color: rgb(100,100,100);
+}
